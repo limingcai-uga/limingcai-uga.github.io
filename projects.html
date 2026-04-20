@@ -1,0 +1,26 @@
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<center><h1> Current Research</h1></center>
+
+
+My current research focuses on developing mathematically grounded models for decoding information from sequential data with complex structural characteristics, particularly higher-order relationships among elements within a sequence. To address this, I have introduced two novel models: the &alpha;-HMM, an arbitrary-order hidden Markov model, and the &beta;k-tree, a backbone k-tree framework. The &alpha;-HMM extends the classical hidden Markov model with incorporation of mechanisms that account for influences from arbitrary-range historical random events in stochastic processes. The &beta;k-tree is a constrained k-tree graph with a persistent Hamiltonian path, well-suited for modeling the overall topology of higher-order relationships among elements in sequential data. (By the way, the use of Greek letters in these acronyms is purely coincidental.)
+
+<p>
+Applications of these models include the computational prediction of ribonucleic acid (RNA) structures and the computational design of RNA molecules. In contrast to protein three-dimensional (3D) structure prediction, which has seen transformative breakthroughs recognized by a recent Nobel Prize, RNA 3D structure prediction remains significantly more challenging due to the inherent flexibility and instability of RNA folding. In addressing the challenge, my research has been focused on the following two projects.
+
+<h2> 1. Co-Transcriptional RNA Folding </h2>
+
+RNA folding is a dynamic process in which an RNA molecule begins to fold into secondary and tertiary structures while it is still being synthesized. Because the growing RNA chain extends sequentially, the folding pathway depends not only on the current sequence but also on the entire history of previously formed structures, leading to strong long-range and path-dependent effects. This inherently sequential and history-sensitive behavior makes co-transcriptional folding well suited to modeling with the &alpha;-HMM, a novel graphical model we introduced to capture arbitrary-order dependencies beyond fixed-order Markov assumptions. By explicitly encoding these historical influences, the &alpha;-HMM enables accurate prediction of both mature and intermediate and offers interpretable insights into RNA structural formation process.
+
+<p>
+Demos: <a href= >co-transcriptional folding of 5S rRNAs and tRNAs</a>
+
+<p>
+<h2>2. RNA 3D Structure Prediction and Design</h2>
+
+Understanding biomolecular structure and function is fundamentally important to biological science and biomedical research, which has strongly motivated the development of computational methods for three-dimensional (3D) structure prediction. Despite more than three decades of effort, RNA 3D structure prediction remains significantly challenging due to the inherent flexibility and instability of RNA folding. Our work addresses this challenge through the &beta;3-tree, a novel graph-theoretic model that enables the recursive characterization of spatial relationships among nucleotides in an RNA 3D structure. Since k-trees are syntactically defined over (k + 1)-cliques, an RNA 3D structure admits a representation as an assembly of tetrahedra, each connecting four nucleotides and corresponding to a 4-clique in the &beta;3-tree model.
+<p>
+
+
+Demos:<a href=>3D structure assembly with tetrahedron building blocks</a>
+
